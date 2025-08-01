@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎉 ¡Feliz Dia Amor! ❤️ - Página Especial</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navegación -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">❤️</div>
+            <ul class="nav-menu">
+                <li><a href="#inicio" class="nav-link">Inicio</a></li>
+                <li><a href="#carta" class="nav-link">Carta</a></li>
+                <li><a href="#poemas" class="nav-link">Poemas</a></li>
+                <li><a href="#juego" class="nav-link">Juego</a></li>
+                <li><a href="memories-locked.html" class="nav-link">Recuerdos</a></li>
+                <li><a href="#sorpresas" class="nav-link">Sorpresas</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sección de Inicio - Felicitación Animada -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <div class="birthday-message">
+                <h1 class="animated-text">¡Feliz Dia Mi Amor!</h1>
+                <h2 class="age-text">❤️ ¡DEYSY! ❤️</h2>
+                <p class="subtitle">Aunque no pueda pasar este dia contigo siempre tratare de sorprenderte</p>
+                <div class="floating-hearts">
+                    <i class="fas fa-heart"></i>
+                    <i class="fas fa-heart"></i>
+                    <i class="fas fa-heart"></i>
+                    <i class="fas fa-heart"></i>
+                    <i class="fas fa-heart"></i>
+                </div>
+            </div>
+            
+            <!-- Botón para ir a recuerdos -->
+            <div class="memories-button-container">
+                <button class="memories-btn" onclick="goToMemories()">
+                    <i class="fas fa-camera"></i>
+                    <span>Ver Nuestros Recuerdos</span>
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+                <p class="memories-hint">📸 Explora nuestros momentos especiales juntos</p>
+            </div>
+        </div>
+        
+        <!-- Efectos de confeti -->
+        <div class="confetti-container"></div>
+        
+        <!-- Botón para continuar -->
+        <div class="scroll-indicator">
+            <a href="#carta" class="scroll-btn">
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Sección de la Carta Digital -->
+    <section id="carta" class="letter-section">
+        <div class="container">
+            <div class="letter-container">
+                <div class="letter-paper">
+                    <div class="letter-header">
+                        <h2>💌 Mi Carta Especial</h2>
+                        <div class="letter-date" id="letter-date"></div>
+                    </div>
+                    <div class="letter-content">
+                        <p class="typing-text" id="letter-text">
+                            Mi niña hermosa, aunque ya no eres niña jejeje, pero aun asi eres mi niña y princesa Deysy 💖
+                            
+                            ¡Feliz Dia De La Novia! ❤️🎉 En este día tan especial, quiero que sepas lo mucho que TE AMO💖. Cada momento contigo ha sido un regalo, cada risa compartida un tesoro, y cada día a tu lado una bendición, y de verdad no me arrepiento y nunca me arrepentire de haberte conocido, aunque fuiste tu la que me hablaste jsjsjsjs pero cada uno de los momentos a tu lado ha sido especial.❤️
+                            
+                            Eres una persona increíble que ilumina mis días con tu sonrisa, alegras mi corazón con solo un mensaje. Tu me haces mejor persona cada día. Fuiste y eres la razon de vivir que necesitaba, apareciste en el momento exacto y ahora ya no puedo estar sin ti.💕
+                                                        
+                            Te amo mucho y espero que algún día pueda celebrarlo junto a ti. Eres muy especial para mí. Es mas ya eres parte de mi jsjsjsjs.😅😘
+
+                            Aunque no pueda estar a tu lado mi amor esto es lo que puedo hacer, espero que te guste, que podamos compartir muchos mas momentos, y que lo que tenemos no se acabe y siga floreciendo cada dia mas, quiero que construyamos algo hermoso, algo que solo nosotros vemos y nos sintamos felices de estar juntos sin que nada ni nadie nos moleste ni nos separe, se que siempre te lo digo pero Te amo, de verdad Te amo y no quiero perderte mii Deysy❤️🥺
+                            
+                            Con mucho cariño y amor, tu amorcito que te ve como una reina💖
+                        </p>
+                    </div>
+                    <div class="letter-footer">
+                        <div class="hearts-animation">
+                            <i class="fas fa-heart"></i>
+                            <i class="fas fa-heart"></i>
+                            <i class="fas fa-heart"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección del Juego de Memoria -->
+    <section id="juego" class="game-section">
+        <div class="container">
+            <h2 class="section-title">🎮 Jueguito para que te diviertas</h2>
+            <div class="game-info">
+                <div class="score">Puntuación: <span id="score">0</span></div>
+                <div class="moves">Movimientos: <span id="moves">0</span></div>
+                <button id="reset-game" class="reset-btn">Reiniciar Juego</button>
+            </div>
+            <div class="memory-game" id="memory-game">
+                <!-- Las tarjetas se generarán con JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Poemas -->
+    <section id="poemas" class="poems-section">
+        <div class="container">
+            <h2 class="section-title">💌 Poemas para mi Princesa</h2>
+            <div class="poems-container">
+                <div class="poem-card">
+                    <div class="poem-header">
+                        <h3>Para cuando te sientas sola💕</h3>
+                        <div class="poem-date" id="poem-date"></div>
+                    </div>
+                    <div class="poem-content">
+                        <!-- Botón para iniciar el poema -->
+                        <div class="poem-start-container" id="poem-start-container">
+                            <div class="poem-start-icon">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <h3>💌 Un Poema Especial para Ti</h3>
+                            <p>Haz clic para descubrir el poema que escribí especialmente para ti</p>
+                            <button class="poem-start-btn" onclick="startPoemAnimation()">
+                                <i class="fas fa-play"></i>
+                                <span>Leer Poema</span>
+                                <i class="fas fa-heart"></i>
+                            </button>
+                        </div>
+                        
+                        <!-- Contenedor del poema (inicialmente oculto) -->
+                        <div class="poem-text-container" id="poem-text-container" style="display: none;">
+                                                    <div class="poem-text" id="poem-text" style="opacity: 0;">
+                            Mi niña Deysy, mi princesa especial,
+                            Hoy celebro lo mucho que significas para mi,
+                            Eres mi sueño hecho realidad,
+                            La dueña de mis más dulces caricias.
+
+                            Tu sonrisa ilumina mi corazón,
+                            Como el sol que brilla en la mañana,
+                            Eres mi mayor inspiración,
+                            Si tú fueras una vía, yo sería el suero… 
+                            Para estar pegado a ti todo el tiempo.
+
+                            Aunque la distancia nos separe,
+                            En mi mente siempre estás presente,
+                            Tu recuerdo nunca se desvanece,
+                            Eres mi amor más ferviente.
+
+                            Quiero que cada dia sigamos
+                            Escribiendo una historia muy hermosa,
+                            Una historia que este llena de alegría,
+                            Fidelidad, felicidad, confianza, respeto,
+                            Y que el amor sea siempre el compromiso,
+                            De cuidarte y amarte cada día.
+
+                            Te amor mucho, mi bebé hermosa,
+                            Eres el amor de mi vida eterna,
+                            Que Dios te bendiga y cuide siempre,
+                            Y que seas muy feliz aunque no este
+                            a tu lado amor.
+                        </div>
+                            <div class="poem-footer">
+                                <div class="poem-hearts">
+                                    <i class="fas fa-heart"></i>
+                                    <i class="fas fa-heart"></i>
+                                    <i class="fas fa-heart"></i>
+                                </div>
+                                <p class="poem-signature">Con todo mi amor, tu novio que te ama mucho 💖</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Sorpresas -->
+    <section id="sorpresas" class="surprises-section">
+        <div class="container">
+            <h2 class="section-title">🎁 Sorpresas Especiales</h2>
+            <div class="surprises-grid">
+                <div class="surprise-card" data-surprise="1">
+                    <div class="surprise-icon">🎵</div>
+                    <h3>Musicas que me recuerdan a ti</h3>
+                    <p>Haz clic para descubrir</p>
+                </div>
+                
+                <div class="surprise-card" data-surprise="2">
+                    <div class="surprise-icon">💝</div>
+                    <h3>Mensaje Especial</h3>
+                    <p>Haz clic para descubrir</p>
+                </div>
+                
+                <div class="surprise-card" data-surprise="3">
+                    <div class="surprise-icon">🌟</div>
+                    <h3>Deseo Mágico</h3>
+                    <p>Haz clic para descubrir</p>
+                </div>
+                
+                <div class="surprise-card" data-surprise="4">
+                    <div class="surprise-icon">🎊</div>
+                    <h3>Celebración</h3>
+                    <p>Haz clic para descubrir</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal para sorpresas -->
+    <div id="surprise-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modal-content"></div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>Hecho con ❤️ para tu día especial preciosa</p>
+            <div class="footer-hearts">
+                <i class="fas fa-heart"></i>
+                <i class="fas fa-heart"></i>
+                <i class="fas fa-heart"></i>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Audio para música de fondo -->
+    <audio id="background-music" loop>
+        <source src="Musica2_infinito.mp3" type="audio/mpeg">
+    </audio>
+    
+    <!-- Controles de música -->
+    <div class="music-controls">
+        <button id="music-toggle" class="music-btn">
+            <i class="fas fa-play"></i>
+        </button>
+        <div class="music-info">
+            <span class="song-title">Canción Especial</span>
+            <span class="song-artist">Para Ti</span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
