@@ -2,7 +2,7 @@
 const BIRTHDAY_DATE = '2025-08-01T22:00:00';
 const REDIRECT_URL = 'birthday.html';
 
-// Variables globales
+// Variables globales 
 let countdownInterval;
 let isBirthdayReached = false;
 
