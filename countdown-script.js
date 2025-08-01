@@ -1,5 +1,5 @@
 // Configuración
-const BIRTHDAY_DATE = '2025-08-01T23:00:00';
+const BIRTHDAY_DATE = '2025-08-01T22:00:00';
 const REDIRECT_URL = 'birthday.html';
 
 // Variables globales
