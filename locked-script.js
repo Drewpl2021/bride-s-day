@@ -241,7 +241,7 @@ function unlockSpecialSection() {
     
     // Preparar mensaje de WhatsApp
     const phoneNumber = '+51959746720';
-    const message = '<p>💌 Mi amor, solo quería decirte que💖......🎁❤️.</p>';
+    const message = '💌 Mi amor, solo quería decirte que💖......🎁❤️.';
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     
     // Agregar efecto visual al botón
